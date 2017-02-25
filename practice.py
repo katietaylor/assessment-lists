@@ -90,26 +90,33 @@ def smallest_int(numbers):
     return minimum
 
 
-# def largest_int(numbers):
-#     """Find the largest integer in a list of integers and return it.
+def largest_int(numbers):
+    """Find the largest integer in a list of integers and return it.
 
-#     **DO NOT USE** the built-in function `max()`!
+    **DO NOT USE** the built-in function `max()`!
 
-#     For example::
+    For example::
 
-#         >>> largest_int([-5, 2, -5, 7])
-#         7
+        >>> largest_int([-5, 2, -5, 7])
+        7
 
-#         >>> largest_int([3, 7, 2, 8, 4])
-#         8
+        >>> largest_int([3, 7, 2, 8, 4])
+        8
 
-#     If the input list is empty, return None::
+    If the input list is empty, return None::
 
-#         >>> largest_int([]) is None
-#         True
-#     """
+        >>> largest_int([]) is None
+        True
+    """
 
-#     return 0
+    try:
+        maximum = numbers[0]
+    except IndexError:
+        return
+    for num in numbers:
+        if num > maximum:
+            maximum = num
+    return maximum
 
 
 # def halvesies(numbers):
