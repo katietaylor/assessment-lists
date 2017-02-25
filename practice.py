@@ -119,22 +119,23 @@ def largest_int(numbers):
     return maximum
 
 
-# def halvesies(numbers):
-#     """Return list of numbers from input list, each divided by two.
+def halvesies(numbers):
+    """Return list of numbers from input list, each divided by two.
 
-#     For example::
+    For example::
 
-#         >>> halvesies([2, 6, -2])
-#         [1.0, 3.0, -1.0]
+        >>> halvesies([2, 6, -2])
+        [1.0, 3.0, -1.0]
 
-#     If any of the numbers are odd, make sure you don't round off
-#     the half::
+    If any of the numbers are odd, make sure you don't round off
+    the half::
 
-#         >>> halvesies([1, 5])
-#         [0.5, 2.5]
-#     """
+        >>> halvesies([1, 5])
+        [0.5, 2.5]
+    """
 
-#     return []
+    halved_numbers = [float(num) / 2 for num in numbers]
+    return halved_numbers
 
 
 # def word_lengths(words):
