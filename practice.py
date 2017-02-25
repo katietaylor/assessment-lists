@@ -138,16 +138,16 @@ def halvesies(numbers):
     return halved_numbers
 
 
-# def word_lengths(words):
-#     """Return the length of words in the input list.
+def word_lengths(words):
+    """Return the length of words in the input list.
 
-#     For example::
+    For example::
 
-#         >>> word_lengths(["hello", "hey", "hello", "spam"])
-#         [5, 3, 5, 4]
-#     """
+        >>> word_lengths(["hello", "hey", "hello", "spam"])
+        [5, 3, 5, 4]
+    """
 
-#     return []
+    return [len(word) for word in words]
 
 
 # def sum_numbers(numbers):
