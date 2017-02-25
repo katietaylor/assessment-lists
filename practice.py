@@ -344,41 +344,53 @@ def duplicates(items):
     """
 
     duplicate_words = []
-    for i in items:
-        if items.count(i) > 1:
-            if i not in duplicate_words:
-                duplicate_words.append(i)
+    for item in items:
+        if items.count(item) > 1:
+            if item not in duplicate_words:
+                duplicate_words.append(item)
     return duplicate_words
 
 
-# def find_letter_indices(words, letter):
-#     """Return list of indices where letter appears in each word.
+def find_letter_indices(words, letter):
+    """Return list of indices where letter appears in each word.
 
-#     Given a list of words and a letter, return a list of integers
-#     that correspond to the index of the first occurrence of the letter
-#     in that word.
+    Given a list of words and a letter, return a list of integers
+    that correspond to the index of the first occurrence of the letter
+    in that word.
 
-#     **DO NOT** use the `list.index()` method.
+    **DO NOT** use the `list.index()` method.
 
-#     For example::
+    For example::
 
-#         >>> find_letter_indices(['odd', 'dog', 'who'], 'o')
-#         [0, 1, 2]
+        >>> find_letter_indices(['odd', 'dog', 'who'], 'o')
+        [0, 1, 2]
 
-#     ("o" is at index 0 in "odd", is at index 1 in "dog", and at
-#     index 2 in "who")
+    ("o" is at index 0 in "odd", is at index 1 in "dog", and at
+    index 2 in "who")
 
-#     If the letter doesn't occur in one of the words, use `None` for
-#     that word in the output list. For example::
+    If the letter doesn't occur in one of the words, use `None` for
+    that word in the output list. For example::
 
-#         >>> find_letter_indices(['odd', 'dog', 'who', 'jumps'], 'o')
-#         [0, 1, 2, None]
+        >>> find_letter_indices(['odd', 'dog', 'who', 'jumps'], 'o')
+        [0, 1, 2, None]
 
-#     ("o" does not appear in "jumps", so the result for that input is
-#     `None`.)
-#     """
+    ("o" does not appear in "jumps", so the result for that input is
+    `None`.)
+    """
 
-#     return []
+    indices = []
+    for word in words:
+        if letter in word:
+            index = 0
+            for ltr in word:
+                if ltr == letter:
+                    break
+                else:
+                    index += 1
+            indices.append(index)
+        else:
+            indices.append(None)
+    return indices
 
 #####################################################################
 # END OF PRACTICE: You can ignore everything below.
