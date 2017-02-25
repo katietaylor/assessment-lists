@@ -317,33 +317,38 @@ def reverse_list_in_place(items):
     items[:] = items[::-1]
 
 
-# def duplicates(items):
-#     """Return list of words from input list which were duplicates.
+def duplicates(items):
+    """Return list of words from input list which were duplicates.
 
-#     Return a list of words which are duplicated in the input list.
-#     The returned list should be in ascending order.
+    Return a list of words which are duplicated in the input list.
+    The returned list should be in ascending order.
 
-#     For example::
+    For example::
 
-#         >>> duplicates(
-#         ...     ["apple", "banana", "banana", "cherry", "apple"]
-#         ... )
-#         ['apple', 'banana']
+        >>> duplicates(
+        ...     ["apple", "banana", "banana", "cherry", "apple"]
+        ... )
+        ['apple', 'banana']
 
-#         >>> duplicates([1, 2, 2, 4, 4, 4, 7])
-#         [2, 4]
+        >>> duplicates([1, 2, 2, 4, 4, 4, 7])
+        [2, 4]
 
-#     You should do this without changing the original list::
+    You should do this without changing the original list::
 
-#         >>> orig = ["apple", "apple", "berry"]
-#         >>> duplicates(orig)
-#         ['apple']
+        >>> orig = ["apple", "apple", "berry"]
+        >>> duplicates(orig)
+        ['apple']
 
-#         >>> orig
-#         ['apple', 'apple', 'berry']
-#     """
+        >>> orig
+        ['apple', 'apple', 'berry']
+    """
 
-#     return []
+    duplicate_words = []
+    for i in items:
+        if items.count(i) > 1:
+            if i not in duplicate_words:
+                duplicate_words.append(i)
+    return duplicate_words
 
 
 # def find_letter_indices(words, letter):
