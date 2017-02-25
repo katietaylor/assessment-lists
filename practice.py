@@ -246,24 +246,24 @@ def average(numbers):
     return average
 
 
-# def join_strings_with_comma(words):
-#     """Return ['list', 'of', 'words'] like "list, of, words".
+def join_strings_with_comma(words):
+    """Return ['list', 'of', 'words'] like "list, of, words".
 
-#     For example::
+    For example::
 
-#         >>> join_strings_with_comma(
-#         ...     ["Labrador", "Poodle", "French Bulldog"]
-#         ...     )
-#         'Labrador, Poodle, French Bulldog'
+        >>> join_strings_with_comma(
+        ...     ["Labrador", "Poodle", "French Bulldog"]
+        ...     )
+        'Labrador, Poodle, French Bulldog'
 
-#     If there's only one thing in the list, it should return just that
-#     thing, of course::
+    If there's only one thing in the list, it should return just that
+    thing, of course::
 
-#         >>> join_strings_with_comma(["Pretzel"])
-#         'Pretzel'
-#     """
+        >>> join_strings_with_comma(["Pretzel"])
+        'Pretzel'
+    """
 
-#     return ""
+    return ", ".join(words)
 
 
 # def reverse_list(items):
