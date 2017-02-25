@@ -170,27 +170,27 @@ def sum_numbers(numbers):
     return reduce(lambda total, num: total + num, numbers, 0)
 
 
-# def mult_numbers(numbers):
-#     """Return product (result of multiplication) of numbers in list.
+def mult_numbers(numbers):
+    """Return product (result of multiplication) of numbers in list.
 
-#     For example::
+    For example::
 
-#         >>> mult_numbers([1, 2, 3])
-#         6
+        >>> mult_numbers([1, 2, 3])
+        6
 
-#     Obviously, if there is a zero in input, the product is zero::
+    Obviously, if there is a zero in input, the product is zero::
 
-#         >>> mult_numbers([10, 20, 0, 50])
-#         0
+        >>> mult_numbers([10, 20, 0, 50])
+        0
 
-#     As explained at http://en.wikipedia.org/wiki/Empty_product,
-#     if the list is empty, the product should be 1::
+    As explained at http://en.wikipedia.org/wiki/Empty_product,
+    if the list is empty, the product should be 1::
 
-#         >>> mult_numbers([])
-#         1
-#     """
+        >>> mult_numbers([])
+        1
+    """
 
-#     return None
+    return reduce(lambda product, num: product * num, numbers, 1)
 
 
 # def join_strings(words):
