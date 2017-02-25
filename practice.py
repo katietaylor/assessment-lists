@@ -193,24 +193,27 @@ def mult_numbers(numbers):
     return reduce(lambda product, num: product * num, numbers, 1)
 
 
-# def join_strings(words):
-#     """Return a string of all input strings joined together.
+def join_strings(words):
+    """Return a string of all input strings joined together.
 
-#     Python has a built-in method, `list.join()` --- but for
-#     this exercise, **you should not use it**.
+    Python has a built-in method, `list.join()` --- but for
+    this exercise, **you should not use it**.
 
-#     For example::
+    For example::
 
-#         >>> join_strings(["spam", "spam", "bacon", "balloonicorn"])
-#         'spamspambaconballoonicorn'
+        >>> join_strings(["spam", "spam", "bacon", "balloonicorn"])
+        'spamspambaconballoonicorn'
 
-#     For an empty list, you should return an empty string::
+    For an empty list, you should return an empty string::
 
-#         >>> join_strings([])
-#         ''
-#     """
+        >>> join_strings([])
+        ''
+    """
+    words_string = ""
+    for word in words:
+        words_string += word
 
-#     return "Not the right thing"
+    return words_string
 
 
 # def average(numbers):
