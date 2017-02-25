@@ -266,30 +266,30 @@ def join_strings_with_comma(words):
     return ", ".join(words)
 
 
-# def reverse_list(items):
-#     """Return the input list, reversed.
+def reverse_list(items):
+    """Return the input list, reversed.
 
-#     **Do not use** the python function `reversed()` or the method
-#     `list.reverse()`.
+    **Do not use** the python function `reversed()` or the method
+    `list.reverse()`.
 
-#     For example::
+    For example::
 
-#         >>> reverse_list([1, 2, 3])
-#         [3, 2, 1]
+        >>> reverse_list([1, 2, 3])
+        [3, 2, 1]
 
-#         >>> reverse_list(["cookies", "love", "I"])
-#         ['I', 'love', 'cookies']
+        >>> reverse_list(["cookies", "love", "I"])
+        ['I', 'love', 'cookies']
 
-#     You should do this without changing the original list::
+    You should do this without changing the original list::
 
-#         >>> orig = ["apple", "berry", "cherry"]
-#         >>> reverse_list(orig)
-#         ['cherry', 'berry', 'apple']
-#         >>> orig
-#         ['apple', 'berry', 'cherry']
-#     """
+        >>> orig = ["apple", "berry", "cherry"]
+        >>> reverse_list(orig)
+        ['cherry', 'berry', 'apple']
+        >>> orig
+        ['apple', 'berry', 'cherry']
+    """
 
-#     return []
+    return items[::-1]
 
 
 # def reverse_list_in_place(items):
