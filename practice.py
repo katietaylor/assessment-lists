@@ -292,30 +292,29 @@ def reverse_list(items):
     return items[::-1]
 
 
-# def reverse_list_in_place(items):
-#     """Reverse the input list `in place`.
+def reverse_list_in_place(items):
+    """Reverse the input list `in place`.
 
-#     Reverse the input list given, but do it "in place" --- that is,
-#     do not create a new list and return it, but modify the original
-#     list.
+    Reverse the input list given, but do it "in place" --- that is,
+    do not create a new list and return it, but modify the original
+    list.
 
-#     **Do not use** the python function `reversed()` or the method
-#     `list.reverse()`.
+    **Do not use** the python function `reversed()` or the method
+    `list.reverse()`.
 
-#     For example::
+    For example::
 
-#         >>> orig = [1, 2, 3]
-#         >>> reverse_list_in_place(orig)
-#         >>> orig
-#         [3, 2, 1]
+        >>> orig = [1, 2, 3]
+        >>> reverse_list_in_place(orig)
+        >>> orig
+        [3, 2, 1]
 
-#         >>> orig = ["cookies", "love", "I"]
-#         >>> reverse_list_in_place(orig)
-#         >>> orig
-#         ['I', 'love', 'cookies']
-#     """
-
-#     return []
+        >>> orig = ["cookies", "love", "I"]
+        >>> reverse_list_in_place(orig)
+        >>> orig
+        ['I', 'love', 'cookies']
+    """
+    items[:] = items[::-1]
 
 
 # def duplicates(items):
