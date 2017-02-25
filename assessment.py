@@ -76,8 +76,10 @@ def foods_in_common(foods1, foods2):
         []
 
     """
-
-    return ['the wrong thing']
+    foods1 = set(foods1)
+    foods2 = set(foods2)
+    shared_foods = sorted(list(foods1 & foods2))
+    return shared_foods
 
 
 def every_other_item(items):
