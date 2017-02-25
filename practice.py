@@ -38,7 +38,9 @@ def long_words(words):
         []
     """
 
-    return ['the wrong thing']
+
+    long_words_list = [word for word in words if len(word) > 4]
+    return long_words_list
 
 
 # def n_long_words(words, n):
