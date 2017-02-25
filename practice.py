@@ -38,49 +38,49 @@ def long_words(words):
         []
     """
 
-
     long_words_list = [word for word in words if len(word) > 4]
     return long_words_list
 
 
-# def n_long_words(words, n):
-#     """Return words in list longer than `n` characters.
+def n_long_words(words, n):
+    """Return words in list longer than `n` characters.
 
-#     For example::
+    For example::
 
-#         >>> n_long_words(
-#         ...     ["hello", "hey", "spam", "spam", "bacon", "bacon"],
-#         ...     3
-#         ... )
-#         ['hello', 'spam', 'spam', 'bacon', 'bacon']
+        >>> n_long_words(
+        ...     ["hello", "hey", "spam", "spam", "bacon", "bacon"],
+        ...     3
+        ... )
+        ['hello', 'spam', 'spam', 'bacon', 'bacon']
 
-#         >>> n_long_words(["I", "like", "apples", "bananas", "you"], 5)
-#         ['apples', 'bananas']
-#     """
+        >>> n_long_words(["I", "like", "apples", "bananas", "you"], 5)
+        ['apples', 'bananas']
+    """
 
-#     return ['the wrong thing']
+    long_words = [word for word in words if len(word) > n]
+    return long_words
 
 
-# def smallest_int(numbers):
-#     """Find the smallest integer in a list of integers and return it.
+def smallest_int(numbers):
+    """Find the smallest integer in a list of integers and return it.
 
-#     **DO NOT USE** the built-in function `min()`!
+    **DO NOT USE** the built-in function `min()`!
 
-#     For example::
+    For example::
 
-#         >>> smallest_int([-5, 2, -5, 7])
-#         -5
+        >>> smallest_int([-5, 2, -5, 7])
+        -5
 
-#         >>> smallest_int([3, 7, 2, 8, 4])
-#         2
+        >>> smallest_int([3, 7, 2, 8, 4])
+        2
 
-#     If the input list is empty, return `None`::
+    If the input list is empty, return `None`::
 
-#         >>> smallest_int([]) is None
-#         True
-#     """
+        >>> smallest_int([]) is None
+        True
+    """
 
-#     return 100
+    return 100
 
 
 # def largest_int(numbers):
