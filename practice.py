@@ -80,7 +80,14 @@ def smallest_int(numbers):
         True
     """
 
-    return 100
+    try:
+        minimum = numbers[0]
+    except IndexError:
+        return
+    for num in numbers:
+        if num < minimum:
+            minimum = num
+    return minimum
 
 
 # def largest_int(numbers):
