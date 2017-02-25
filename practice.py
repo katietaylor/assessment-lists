@@ -216,27 +216,34 @@ def join_strings(words):
     return words_string
 
 
-# def average(numbers):
-#     """Return the average (mean) of the list of numbers given.
+def average(numbers):
+    """Return the average (mean) of the list of numbers given.
 
-#     For example::
+    For example::
 
-#         >>> average([2, 4])
-#         3.0
+        >>> average([2, 4])
+        3.0
 
-#     This should handle cases where the result isn't an integer::
+    This should handle cases where the result isn't an integer::
 
-#         >>> average([2, 12, 3])
-#         5.666666666666667
+        >>> average([2, 12, 3])
+        5.666666666666667
 
-#     There is no defined answer if the list given is empty;
-#     it's fine if this raises an error when given an empty list.
+    There is no defined answer if the list given is empty;
+    it's fine if this raises an error when given an empty list.
 
-#     (Think of the best way to handle an empty input list, though,
-#     a feel free to provide a good solution here.)
-#     """
+    (Think of the best way to handle an empty input list, though,
+    a feel free to provide a good solution here.)
+    """
 
-#     return 0
+    total = 0
+    for num in numbers:
+        total += num
+    try:
+        average = float(total) / len(numbers)
+    except ZeroDivisionError:
+        return "No numbers to average"
+    return average
 
 
 # def join_strings_with_comma(words):
