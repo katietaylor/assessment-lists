@@ -1,4 +1,4 @@
-"""List Assessment 
+"""List Assessment
 
 Edit the functions until all of the doctests pass when
 you run this file.
@@ -45,8 +45,9 @@ def print_indices(items):
         3 Volvo
 
     """
-    for index in range(len(items)):
-        print index, items[index]
+
+    for index, item in enumerate(items):
+        print index, item
 
 
 def foods_in_common(foods1, foods2):
@@ -66,7 +67,7 @@ def foods_in_common(foods1, foods2):
         ...     ["hummus", "cheese", "beets", "kale", "lentils", "bagel", "cake" ]
         ... )
         ['bagel', 'cake', 'cheese', 'kale']
-        
+
     If there are no foods in common, return an empty list::
 
         >>> foods_in_common(
@@ -76,9 +77,11 @@ def foods_in_common(foods1, foods2):
         []
 
     """
+
     foods1 = set(foods1)
     foods2 = set(foods2)
     shared_foods = sorted(list(foods1 & foods2))
+
     return shared_foods
 
 
@@ -120,6 +123,7 @@ def largest_n_items(items, n):
         >>> largest_n_items([3, 3, 3, 2, 1], 2)
         [3, 3]
     """
+
     items.sort()
     return [item for item in items[(len(items)-n):]]
 
